@@ -88,7 +88,7 @@ class Match {
 
 public:
     Match(int o, Team* t1, Team* t2) : overs(o), team1(t1), team2(t2) {
-        srand(time(0));  // Seed for random number generation
+        srand(time(0));  //  for random number generation
     }
     
     void start() {
@@ -128,11 +128,11 @@ public:
 };
 
 int main() {
-    vector<string> team1Players = {"Player1", "Player2", "Player3", "Player4", "Player5"};
-    vector<string> team2Players = {"Player6", "Player7", "Player8", "Player9", "Player10"};
+    vector<string> team1Players = {"PRANAV", "AMIT", "RAUSHAN", "ABHISHEK", "ASHUTOSH"};
+    vector<string> team2Players = {"PAWAN", "ROCKY", "GOLU", "KUNDAN", "MITHLESH"};
     
-    Team team1("Team A", team1Players);
-    Team team2("Team B", team2Players);
+    Team team1("Team A(PRANAV)", team1Players);
+    Team team2("LAFUA Team B", team2Players);
     
     Match match(2, &team1, &team2);  // 2-over match
     match.start();
